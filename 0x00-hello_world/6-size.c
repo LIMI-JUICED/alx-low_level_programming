@@ -12,12 +12,11 @@ int main(void)
 {
 
 	/* sizeof evaluates the size of a variable */
-	printf("Size of a char: %lu byte(s)\n", sizeof(char));
-	printf("Size of an int: %lu bytes(s)\n", sizeof(int));
-	printf("Size of an double: %lu bytes(s)\n", sizeof(double));
-	printf("Size of a long int: %lu bytes(s)\n", sizeof(long int));
-	printf("Size of a long long int: %lu btyes(s)\n", sizeof(long long int));
-	printf("Size of a float: %lu byte(s)\n", sizeof(float));
+	printf("Size of a char: 1 byte(s)\n", sizeof(char));
+	printf("Size of an int: 4 bytes(s)\n", sizeof(int));
+	printf("Size of a long int: 8 bytes(s)\n", sizeof(long int));
+	printf("Size of a long long int: 8  btyes(s)\n", sizeof(long long int));
+	printf("Size of a float: 4 byte(s)\n", sizeof(float));
 
 	return (0);
 
