@@ -6,7 +6,6 @@
  *
  * Return: Always ).
  */
-
 int main(void)
 {
 	char *str;
