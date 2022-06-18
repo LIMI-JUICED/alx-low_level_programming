@@ -1,11 +1,10 @@
 /**
- * leet - a function that encodes a string into 1337
+ * leet - a function that encodes a string into 1337.
  *
- * @s: string input
+ * @s: string input.
  *
- * Return: @s
+ * Return: @s.
  */
-
 char *leet(char *s)
 {
 	int i, c = 0;
@@ -25,7 +24,7 @@ char *leet(char *s)
 		 */
 		for (i = 0; i < 5; i++)
 		{
-			f (s[c] == sl[i] || s[c] == ul[i])
+			if (s[c] == sl[i] || s[c] == ul[i])
 			{
 				s[c] = n[i];
 				break;
