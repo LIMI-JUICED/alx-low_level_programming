@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion(char *s)
+ * _print_rev_recursion - reverse
  *
- * @s: pointer to string parameters
+ * @s: pointer to string params
  *
- * Return: void
  */
+
 void _print_rev_recursion(char *s)
 {
 	if (*s)
