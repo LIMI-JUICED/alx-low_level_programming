@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -10,15 +9,8 @@
  * Return: Always 0 (Success)
  */
 
-int main(int argc, char __attribute__((unused)) *argv[])
+int main(int argc, char *argv __attribute__((unused)))
 {
-	int i = 0, m;
-
-	while (i < argc)
-	{
-		m = i;
-		i++;
-	}
-	printf("%d\n", m);
+	printf("%d\n", argc - 1);
 	return (0);
 }
