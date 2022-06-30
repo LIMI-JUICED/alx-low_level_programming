@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - a program that multiplies two arguments passed into it
@@ -12,17 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	int m;
+	int result = 0, num1, num2;
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-	else
-	{
-		m = (atoi(argv[1]) * atoi(argv[2]));
-		printf("%d\n", m);
-	}
-	return (0);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		result = num1 * num2;
+
+		printf("%d\n", result);
+		return (0);
 }

@@ -12,31 +12,25 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, coins_number = 0;
+	int result = 0, num, i, j, k;
 
-	if (argc != 2)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
-	}
-	else
-	{
-		cents = atoi(argv[coins_number]);
-		while (cents > 0)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (cents >= 25)
-				cents -= 25;
-			else if (cents >= 10)
-				cents -= 10;
-			else if (cents >= 5)
-				cents -= 5;
-			else if (cents >= 2)
-				cents -= 2;
-			else if (cents >= 1)
-				cents -= 1;
-			coins_number += 1;
+			if (argv[i][j] > '9' || argv[i][j] < '0')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 		}
 	}
-	printf("%d\n", coins_number);
+	
+	for (k = 1; k < argc; k++)
+	{
+		num = atoi(argv[k]);
+		result += num;
+	}
+	printf("%d\n", result);
 	return (0);
 }
